@@ -1,0 +1,11 @@
+{
+  "domain": "llm_script_tools",
+  "name": "LLM Script Tools",
+  "version": "1.0.0",
+  "class": "local_push",
+  "config_flow": true,
+  "dependencies": ["conversation"],
+  "codeowners": ["@mitrokun"],
+  "requirements": [],
+  "documentation": "https://github.com/home-assistant/core"
+}
