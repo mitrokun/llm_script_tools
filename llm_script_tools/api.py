@@ -76,9 +76,6 @@ class LlmScriptToolsAPI(llm.API):
         if not tools:
             return "You have no scripts exposed."
 
-        script_names = [f"- {tool.name}: {tool.description or 'No description'}" for tool in tools]
-        script_list_str = "\n".join(script_names)
-
         location_section = f"\n{location_info}\n" if location_info else ""
 
         return (
@@ -87,7 +84,4 @@ class LlmScriptToolsAPI(llm.API):
             "Use these tools ONLY if the user's request clearly implies executing one of them.\n"
             "If no script matches the request, continue the conversation according to your persona without calling any tools.\n"
             f"{location_section}"
-            "\n"
-            "Available Scripts:\n"
-            f"{script_list_str}"
         )
