@@ -21,7 +21,7 @@
         "data_description": {
           "prompt": "Additional instructions for the LLM. Define rules and behavior here. Location context is added automatically.",
           "use_label_filter": "If enabled, only scripts with the specific label below (AND exposed to Assist) will be used.",
-          "llm_label": "The label to look for in the Entity Registry (e.g., 'llm'). Please note that label names from the GUI are converted to lowercase.
+          "llm_label": "The label to look for in the Entity Registry (e.g., 'llm'). Please note that label names from the GUI are converted to lowercase."
         }
       }
     }
