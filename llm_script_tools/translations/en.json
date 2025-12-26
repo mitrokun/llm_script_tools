@@ -1,0 +1,29 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "LLM Script Tools",
+        "description": "Set up LLM Script Tools to expose specific scripts to AI."
+      }
+    },
+    "abort": {
+      "single_instance_allowed": "Only a single configuration of LLM Script Tools is allowed."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "data": {
+          "prompt": "System Prompt",
+          "use_label_filter": "Enable Label Filter",
+          "llm_label": "Label Name"
+        },
+        "data_description": {
+          "prompt": "Additional instructions for the LLM. Define rules and behavior here. Location context is added automatically.",
+          "use_label_filter": "If enabled, only scripts with the specific label below (AND exposed to Assist) will be used.",
+          "llm_label": "The label to look for in the Entity Registry (e.g., 'llm')."
+        }
+      }
+    }
+  }
+}

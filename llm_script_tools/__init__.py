@@ -11,12 +11,14 @@ from .const import DOMAIN
 async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
     """Set up LLM Script Tools from a config entry."""
     
-    api = LlmScriptToolsAPI(hass)
+    # Передаем entry в API, чтобы иметь доступ к настройкам
+    api = LlmScriptToolsAPI(hass, entry)
     unsub = llm.async_register_api(hass, api)
     
     hass.data.setdefault(DOMAIN, {})
     hass.data[DOMAIN][entry.entry_id] = unsub
     
+    # При изменении настроек (нажатии кнопки submit в options flow) интеграция перезагрузится
     entry.async_on_unload(entry.add_update_listener(async_reload_entry))
 
     return True
