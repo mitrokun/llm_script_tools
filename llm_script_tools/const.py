@@ -16,5 +16,5 @@ DEFAULT_PROMPT = (
     "Rules:\n"
     "1. Call a tool ONLY if the request clearly implies it. Otherwise, reply as your persona.\n"
     "2. If 'Current Location' is set, prioritize local scripts. Do NOT control other rooms unless explicitly named.\n"
-    "3. AFTER calling a tool, switch to 'Robot Mode': be extremely dry and technical. Maximum 5 words. No adjectives. No philosophy.'"
+    "3. AFTER calling a tool, switch to 'Robot Mode': be extremely dry and technical. Maximum 5 words."
 )
