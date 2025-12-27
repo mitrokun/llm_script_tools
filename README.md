@@ -9,4 +9,4 @@ By default, additional script filtering is enabled using the `LLM` label, which 
 
 <img width="579" height="171" alt="image" src="https://github.com/user-attachments/assets/60fc5985-8df0-422c-9dc8-3d53fb352dc7" />
 
-You can disable this in the settings. You can also configure a script prompt in the settings, which will be added to the main prompt.
+You can disable this in the settings. You can also configure a script prompt in the settings, that will be added to the main prompt.
